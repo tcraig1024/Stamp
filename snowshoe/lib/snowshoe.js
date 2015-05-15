@@ -16,7 +16,7 @@ function client (3254d43c9096961b670a, 108c35d3355773f411a96d62a7dd116ea9ed13eb)
     this.oauth.post(
       'http://beta.snowshoestamp.com/api/v2/stamp',
       'http://tcraig1024.github.io/Stamp/Success.html',
-      'http://tcraig1024.github.io/Stamp/Success.log',
+      'http://tcraig1024.github.io/Stamp/Logs/Success.log',
       points,
       function (error, data, oauth_response){
         if (error) {
