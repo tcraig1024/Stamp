@@ -1,0 +1,54 @@
+{
+  "name": "snowshoe",
+  "version": "0.1.0",
+  "description": "Node API Client for the Snowshoe API",
+  "author": {
+    "name": "Snowshoe"
+  },
+  "contributors": [
+    {
+      "name": "Philipe Navarro"
+    }
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/snowshoestamp/snowshoe_node.git"
+  },
+  "keywords": [
+    "snowshoe"
+  ],
+  "dependencies": {
+    "oauth": ">=0.9.12"
+  },
+  "gitHead": "287dc55dcdd837e2370fb3a614f25dde6ebcff7e",
+  "bugs": {
+    "url": "https://github.com/snowshoestamp/snowshoe_node/issues"
+  },
+  "homepage": "https://github.com/snowshoestamp/snowshoe_node",
+  "_id": "snowshoe@0.1.0",
+  "_shasum": "d88b12ac2fde6c44a07282296dcba8ba0be27ac5",
+  "_from": "snowshoe@*",
+  "_npmVersion": "2.0.0",
+  "_npmUser": {
+    "name": "rasphilco",
+    "email": "philipe@snowshoestamp.com"
+  },
+  "maintainers": [
+    {
+      "name": "rasphilco",
+      "email": "philipe@snowshoestamp.com"
+    }
+  ],
+  "dist": {
+    "shasum": "d88b12ac2fde6c44a07282296dcba8ba0be27ac5",
+    "tarball": "http://registry.npmjs.org/snowshoe/-/snowshoe-0.1.0.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/snowshoe/-/snowshoe-0.1.0.tgz",
+  "readme": "ERROR: No README data found!"
+}
