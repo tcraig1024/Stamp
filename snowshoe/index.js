@@ -6,7 +6,9 @@ var data = {data: request.body.data}
 client.post(data, response, function(error, data, response)
 { if (error) { 
 // handle errors 
+window.location.href = "http://tcraig1024.github.io/Stamp/Error.html";
 }; 
 // handle success 
+window.location.href = "http://tcraig1024.github.io/Stamp/Success.html"
 })
 module.exports = snowshoe;
