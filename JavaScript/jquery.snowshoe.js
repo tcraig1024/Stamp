@@ -12,9 +12,9 @@ See GitHub project page for Documentation and License
         var stampScreenElmId = configs.stampScreenElmId || "snowshoe-stamp-screen";
         var progressBarOn = configs.progressBarOn || false;
         var postViaAjax = configs.postViaAjax || false;
-        var postUrl = configs.postUrl || "http://tcraig1024.github.io/Stamp/index.html";
-        var success = configs.success || "http://tcraig1024.github.io/Stamp/Success.html";
-        var error = configs.error || "http://tcraig1024.github.io/Stamp/Error.html";
+        var postUrl = configs.postUrl || "/stampscreen";
+        var success = configs.success || {};
+        var error = configs.error || {};
         var points = [];
         var stampScreenElm = document.getElementById(stampScreenElmId);
         var stampTouching = false;
@@ -36,7 +36,6 @@ See GitHub project page for Documentation and License
 
         function showSpinner() {
             $('#snowshoe-progress-bar').addClass("snowshoe-progress-bar");
-            $('#loader').removeClass("loader-hidden");
         };
 
         function send(points, postViaAjax){
