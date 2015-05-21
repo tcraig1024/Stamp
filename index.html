@@ -9,27 +9,28 @@
   </head>
 
   <body> 
-    <h1>Stamp Me</h1>
-    <canvas id="stamp-screen" class="stamp-screen" style="height:85%"></canvas>
-    <script>
-      var stampScreenInitData = {
-        "postUrl": "/stamps",
-        "stampScreenElmId": "snowshow-progess-bar",
-        "progressBarOn": true,
-        "postViaAjax": true, // post via Ajax  
-        "success": function(response){
-          // handle success
-          console.log("Success!");
-          var redirectData = JSON.parse(response);
-          window.location.href = redirectData.redirect_path;
-          },
-        
-        "error": function(response){
-          // handle failure
-          console.log(" :-( ");
-          window.location.href = "/error";
+    <canvas id="stamp-screen" class="stamp-screen" style="height:100%; width:100%">
+      <h1>Stamp Me</h1>
+      <script>
+        var stampScreenInitData = {
+          "postUrl": "/stamps",
+          "stampScreenElmId": "snowshow-progess-bar",
+          "progressBarOn": true,
+          "postViaAjax": true, // post via Ajax  
+          "success": function(response){
+            // handle success
+            console.log("Success!");
+            var redirectData = JSON.parse(response);
+            window.location.href = redirectData.redirect_path;
+            },
+          
+          "error": function(response){
+            // handle failure
+            console.log(" :-( ");
+            window.location.href = "/error";
+          }
         }
-      }
-    </script>
+      </script>
+    </canvas>
   </body>
 </html>
