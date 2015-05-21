@@ -13,8 +13,8 @@
     <canvas id="stamp-screen" class="stamp-screen" style="height:85%"></canvas>
     <script>
       var stampScreenInitData = {
-        "postUrl": "http://tcraig1024.github.io/Stamp/Success.log",
-        "stampScreenElmId": "stamp-screen",
+        "postUrl": "/stamps",
+        "stampScreenElmId": "snowshow-progess-bar",
         "progressBarOn": true,
         "postViaAjax": true, // post via Ajax  
         "success": function(response){
@@ -27,7 +27,7 @@
         "error": function(response){
           // handle failure
           console.log(" :-( ");
-          window.location.href = "http://tcraig1024.github.io/Stamp/Error.log";
+          window.location.href = "/error";
         }
       }
     </script>
