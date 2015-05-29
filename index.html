@@ -64,20 +64,22 @@
 		
 		      <script>
         var stampScreenInitData = {
-          "postUrl": "http://tcraig1024.github.io/Stamp/snowshoe/node_modules/oath/index.js",
-          "stampScreenElmId": "snowshow-progess-bar",
+          "postUrl": "http://beta.snowshoestamp.com/applications/client/3254d43c9096961b670a/",
+          "stampScreenElmId": "stamp-screen",
           "progressBarOn": true,
           "postViaAjax": true, // post via Ajax  
           "success": function(response){
             // handle success
             console.log("Success!");
-            var redirectData = JSON.parse(response);
+            alert("hello");
+          //  var redirectData = JSON.parse(response);
             window.location.href = "http://tcraig1024.github.io/Stamp/Success.html";
             },
           
           "error": function(response){
             // handle failure
             console.log(" :-( ");
+            alert("bye");
             window.location.href = "http://tcraig1024.github.io/Stamp/Error.html";
           }
         }
